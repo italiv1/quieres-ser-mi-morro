@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>♡¿Puedo ser tu novio?♡</title>
+    <style>
+        .body {
+            background-color: rgba(223, 119, 171, 0.897);
+            text-align: center;
+        }
+        
+        .body__title {
+color: white;
+        }   
+
+        .body__img {
+width: 100%;
+border-radius: 50%;
+        }   
+    </style>
+</head>
+
+<body class="body">
+ <h1 class="body__title">♡¿Puedo ser tu novio?♡</h1>
+ <img src="https://i.pinimg.com/originals/39/ba/75/39ba75b18a3140006819bbabcdb2ab9b.jpg" alt="f0t0 d mi am0r x ti" class="body__img">
+ <button id="yes">Claro que sí</button>
+ <button id="no">Claro que no -pícame-</button>
+
+ <script>
+    const botonSi = document.getElementById ('yes');
+    const botonNo = document.getElementById ('no');
+
+    const somosnovios = () => {
+alert('Ahora somos novios uwu');
+alert('Nuestra boda es mañana, jeje');
+location.href = 'https://www.youtube.com/watch?v=dlaGYG4iOas'
+    };
+
+    const evitarqueserompamicorazon = () => {
+        botonNo.style.position = 'absolute';
+        botonNo.style.top = (Math.random()* window.innerHeight) + 'px';
+        botonNo.style.left = (Math.random()* window.innerWidth) + 'px';
+    };
+
+    botonSi.addEventListener ('click', somosnovios);
+    botonNo.addEventListener ('mouseover', evitarqueserompamicorazon);
+ </script>
+</body>
+
+</html>
